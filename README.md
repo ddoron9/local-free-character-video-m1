@@ -22,6 +22,13 @@ Apple Silicon(M1 Pro 32GB)에서 **무료/로컬 우선**으로 캐릭터 기반
 - Unified Memory: 32GB
 - Backend: MPS / Metal
 
+## Rabbit consistency preview
+
+아래 GIF는 토끼 캐릭터로 생성한 5개 장면 클립을 2x3 그리드로 묶은 비교본입니다.  
+완전한 identity lock 수준은 아니지만, **귀/얼굴 실루엣/색감/애니메풍 토끼 캐릭터성**이 어느 정도 유지되는지 빠르게 확인할 수 있습니다.
+
+![Rabbit similarity grid](assets/rabbit_similarity_grid.gif)
+
 ## Verified results
 
 ### A. Wan quick i2v rerun
