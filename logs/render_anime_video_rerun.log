@@ -1,0 +1,293 @@
+[start] 2026-03-24 13:54:18 KST render_anime_video_rerun
+/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/scripts/render_anime_video.py:33: SyntaxWarning: invalid escape sequence '\ '
+  f"drawtext=fontfile=/System/Library/Fonts/Supplemental/Verdana\ Bold.ttf:text='{caption}':fontcolor=white:fontsize=58:x=80:y=1580:line_spacing=12,"
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, png_pipe, from 'local-free-character-video-m1/results/anime_stills_rerun/scene_01.png':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 576x1024, 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0xa99048a80] using cpu capabilities: ARMv8 NEON
+[libx264 @ 0xa99048a80] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0xa99048a80] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'local-free-character-video-m1/results/anime_clips/scene_01.mp4':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn
+      Metadata:
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    2 fps=0.0 q=29.0 size=       0KiB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   51 fps= 44 q=29.0 size=     768KiB time=00:00:01.63 bitrate=3852.1kbits/s speed=1.42x    frame=  127 fps= 70 q=29.0 size=    1536KiB time=00:00:04.16 bitrate=3020.0kbits/s speed=2.31x    [out#0/mp4 @ 0xa9903c300] video:1732KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.149102%
+frame=  150 fps= 79 q=-1.0 Lsize=    1734KiB time=00:00:04.93 bitrate=2879.9kbits/s speed=2.61x    
+[libx264 @ 0xa99048a80] frame I:2     Avg QP:14.98  size: 39834
+[libx264 @ 0xa99048a80] frame P:39    Avg QP:21.56  size: 33412
+[libx264 @ 0xa99048a80] frame B:109   Avg QP:27.63  size:  3577
+[libx264 @ 0xa99048a80] consecutive B-frames:  2.0%  1.3%  6.0% 90.7%
+[libx264 @ 0xa99048a80] mb I  I16..4: 54.6% 33.2% 12.2%
+[libx264 @ 0xa99048a80] mb P  I16..4:  1.0%  2.2%  0.6%  P16..4: 40.2% 14.8% 11.0%  0.0%  0.0%    skip:30.3%
+[libx264 @ 0xa99048a80] mb B  I16..4:  0.1%  0.2%  0.0%  B16..8: 32.9%  1.3%  0.2%  direct: 1.1%  skip:64.2%  L0:44.7% L1:51.0% BI: 4.2%
+[libx264 @ 0xa99048a80] 8x8 transform intra:44.6% inter:68.5%
+[libx264 @ 0xa99048a80] coded y,uvDC,uvAC intra: 25.3% 29.3% 14.1% inter: 5.6% 8.8% 3.1%
+[libx264 @ 0xa99048a80] i16 v,h,dc,p: 78% 12%  5%  5%
+[libx264 @ 0xa99048a80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 19% 14% 41%  5%  5%  4%  5%  4%  4%
+[libx264 @ 0xa99048a80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 22% 21% 27%  4%  8%  6%  6%  4%  3%
+[libx264 @ 0xa99048a80] i8c dc,h,v,p: 73% 14% 11%  1%
+[libx264 @ 0xa99048a80] Weighted P-Frames: Y:23.1% UV:23.1%
+[libx264 @ 0xa99048a80] ref P L0: 64.2% 10.0% 14.2% 11.6%  0.0%
+[libx264 @ 0xa99048a80] ref B L0: 93.2%  5.8%  1.0%
+[libx264 @ 0xa99048a80] ref B L1: 93.3%  6.7%
+[libx264 @ 0xa99048a80] kb/s:2836.15
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, png_pipe, from 'local-free-character-video-m1/results/anime_stills_rerun/scene_02.png':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 576x1024, 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x8ed048a80] using cpu capabilities: ARMv8 NEON
+[libx264 @ 0x8ed048a80] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x8ed048a80] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'local-free-character-video-m1/results/anime_clips/scene_02.mp4':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn
+      Metadata:
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    2 fps=0.0 q=29.0 size=       0KiB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   65 fps= 50 q=29.0 size=     768KiB time=00:00:02.10 bitrate=2996.1kbits/s speed=1.61x    frame=  139 fps= 72 q=-1.0 size=    1280KiB time=00:00:04.56 bitrate=2296.2kbits/s speed=2.36x    [out#0/mp4 @ 0x8ed03c300] video:1579KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.164552%
+frame=  150 fps= 76 q=-1.0 Lsize=    1581KiB time=00:00:04.93 bitrate=2625.7kbits/s speed=2.51x    
+[libx264 @ 0x8ed048a80] frame I:2     Avg QP:15.24  size: 33240
+[libx264 @ 0x8ed048a80] frame P:39    Avg QP:21.31  size: 29487
+[libx264 @ 0x8ed048a80] frame B:109   Avg QP:26.49  size:  3664
+[libx264 @ 0x8ed048a80] consecutive B-frames:  2.0%  2.7%  2.0% 93.3%
+[libx264 @ 0x8ed048a80] mb I  I16..4: 54.3% 35.2% 10.5%
+[libx264 @ 0x8ed048a80] mb P  I16..4:  1.0%  2.4%  0.6%  P16..4: 39.7% 13.3%  9.5%  0.0%  0.0%    skip:33.5%
+[libx264 @ 0x8ed048a80] mb B  I16..4:  0.2%  0.3%  0.0%  B16..8: 32.6%  1.4%  0.2%  direct: 1.2%  skip:64.1%  L0:44.6% L1:50.4% BI: 5.0%
+[libx264 @ 0x8ed048a80] 8x8 transform intra:46.8% inter:69.7%
+[libx264 @ 0x8ed048a80] coded y,uvDC,uvAC intra: 23.0% 27.6% 12.2% inter: 5.3% 7.6% 2.0%
+[libx264 @ 0x8ed048a80] i16 v,h,dc,p: 75% 15%  5%  5%
+[libx264 @ 0x8ed048a80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 15% 38%  3%  4%  4%  4%  3%  3%
+[libx264 @ 0x8ed048a80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 23% 22%  3%  6%  5%  5%  3%  3%
+[libx264 @ 0x8ed048a80] i8c dc,h,v,p: 74% 13% 12%  1%
+[libx264 @ 0x8ed048a80] Weighted P-Frames: Y:17.9% UV:17.9%
+[libx264 @ 0x8ed048a80] ref P L0: 65.0%  9.4% 15.2% 10.4%  0.0%
+[libx264 @ 0x8ed048a80] ref B L0: 94.3%  4.8%  1.0%
+[libx264 @ 0x8ed048a80] ref B L1: 95.2%  4.8%
+[libx264 @ 0x8ed048a80] kb/s:2585.31
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, png_pipe, from 'local-free-character-video-m1/results/anime_stills_rerun/scene_03.png':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 576x1024, 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x722c4ca80] using cpu capabilities: ARMv8 NEON
+[libx264 @ 0x722c4ca80] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x722c4ca80] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'local-free-character-video-m1/results/anime_clips/scene_03.mp4':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn
+      Metadata:
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    2 fps=0.0 q=29.0 size=       0KiB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   68 fps= 52 q=29.0 size=     768KiB time=00:00:02.20 bitrate=2859.9kbits/s speed=1.69x    [out#0/mp4 @ 0x72303c300] video:1691KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.152725%
+frame=  150 fps= 80 q=-1.0 Lsize=    1693KiB time=00:00:04.93 bitrate=2811.7kbits/s speed=2.64x    
+[libx264 @ 0x722c4ca80] frame I:2     Avg QP:14.70  size: 37902
+[libx264 @ 0x722c4ca80] frame P:40    Avg QP:21.21  size: 31595
+[libx264 @ 0x722c4ca80] frame B:108   Avg QP:26.25  size:  3620
+[libx264 @ 0x722c4ca80] consecutive B-frames:  2.0%  4.0%  6.0% 88.0%
+[libx264 @ 0x722c4ca80] mb I  I16..4: 54.0% 35.0% 10.9%
+[libx264 @ 0x722c4ca80] mb P  I16..4:  1.1%  2.2%  0.7%  P16..4: 39.4% 13.6% 10.1%  0.0%  0.0%    skip:32.9%
+[libx264 @ 0x722c4ca80] mb B  I16..4:  0.2%  0.2%  0.0%  B16..8: 32.3%  1.2%  0.2%  direct: 1.2%  skip:64.6%  L0:45.5% L1:50.1% BI: 4.4%
+[libx264 @ 0x722c4ca80] 8x8 transform intra:44.9% inter:70.3%
+[libx264 @ 0x722c4ca80] coded y,uvDC,uvAC intra: 24.1% 33.4% 16.4% inter: 5.4% 9.2% 3.3%
+[libx264 @ 0x722c4ca80] i16 v,h,dc,p: 75% 14%  5%  5%
+[libx264 @ 0x722c4ca80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 21% 14% 43%  4%  4%  4%  4%  3%  4%
+[libx264 @ 0x722c4ca80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 23% 24%  4%  7%  5%  6%  4%  3%
+[libx264 @ 0x722c4ca80] i8c dc,h,v,p: 74% 14% 11%  1%
+[libx264 @ 0x722c4ca80] Weighted P-Frames: Y:20.0% UV:20.0%
+[libx264 @ 0x722c4ca80] ref P L0: 66.5%  9.6% 12.7% 11.2%
+[libx264 @ 0x722c4ca80] ref B L0: 93.0%  6.1%  0.9%
+[libx264 @ 0x722c4ca80] ref B L1: 94.8%  5.2%
+[libx264 @ 0x722c4ca80] kb/s:2768.84
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, png_pipe, from 'local-free-character-video-m1/results/anime_stills_rerun/scene_04.png':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 576x1024, 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0xb91060a80] using cpu capabilities: ARMv8 NEON
+[libx264 @ 0xb91060a80] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0xb91060a80] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'local-free-character-video-m1/results/anime_clips/scene_04.mp4':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn
+      Metadata:
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A    frame=   51 fps= 44 q=29.0 size=     768KiB time=00:00:01.63 bitrate=3852.1kbits/s speed=1.42x    frame=  134 fps= 74 q=29.0 size=    1536KiB time=00:00:04.40 bitrate=2859.8kbits/s speed=2.44x    [out#0/mp4 @ 0xb90c44300] video:1720KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.150120%
+frame=  150 fps= 81 q=-1.0 Lsize=    1723KiB time=00:00:04.93 bitrate=2860.4kbits/s speed=2.65x    
+[libx264 @ 0xb91060a80] frame I:2     Avg QP:14.95  size: 39793
+[libx264 @ 0xb91060a80] frame P:40    Avg QP:21.71  size: 32632
+[libx264 @ 0xb91060a80] frame B:108   Avg QP:27.80  size:  3479
+[libx264 @ 0xb91060a80] consecutive B-frames:  2.0%  4.0%  6.0% 88.0%
+[libx264 @ 0xb91060a80] mb I  I16..4: 53.2% 34.5% 12.3%
+[libx264 @ 0xb91060a80] mb P  I16..4:  0.9%  2.2%  0.7%  P16..4: 39.6% 14.0% 10.5%  0.0%  0.0%    skip:32.0%
+[libx264 @ 0xb91060a80] mb B  I16..4:  0.2%  0.2%  0.0%  B16..8: 31.5%  1.4%  0.2%  direct: 1.1%  skip:65.6%  L0:47.0% L1:48.8% BI: 4.2%
+[libx264 @ 0xb91060a80] 8x8 transform intra:45.4% inter:68.4%
+[libx264 @ 0xb91060a80] coded y,uvDC,uvAC intra: 26.2% 28.9% 14.9% inter: 5.6% 9.0% 3.4%
+[libx264 @ 0xb91060a80] i16 v,h,dc,p: 79% 12%  4%  4%
+[libx264 @ 0xb91060a80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 13% 39%  4%  4%  5%  4%  4%  3%
+[libx264 @ 0xb91060a80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 22% 24%  3%  6%  6%  5%  4%  2%
+[libx264 @ 0xb91060a80] i8c dc,h,v,p: 74% 13% 12%  1%
+[libx264 @ 0xb91060a80] Weighted P-Frames: Y:22.5% UV:22.5%
+[libx264 @ 0xb91060a80] ref P L0: 67.0% 10.0% 12.3% 10.7%  0.0%
+[libx264 @ 0xb91060a80] ref B L0: 92.1%  7.1%  0.8%
+[libx264 @ 0xb91060a80] ref B L1: 96.0%  4.0%
+[libx264 @ 0xb91060a80] kb/s:2816.90
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, png_pipe, from 'local-free-character-video-m1/results/anime_stills_rerun/scene_05.png':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 576x1024, 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x89b078a80] using cpu capabilities: ARMv8 NEON
+[libx264 @ 0x89b078a80] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x89b078a80] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'local-free-character-video-m1/results/anime_clips/scene_05.mp4':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn
+      Metadata:
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    2 fps=0.0 q=29.0 size=       0KiB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   71 fps= 57 q=29.0 size=     768KiB time=00:00:02.30 bitrate=2735.6kbits/s speed=1.84x    [out#0/mp4 @ 0x89ac30300] video:1158KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.193981%
+frame=  120 fps= 76 q=-1.0 Lsize=    1160KiB time=00:00:03.93 bitrate=2416.2kbits/s speed= 2.5x    
+[libx264 @ 0x89b078a80] frame I:2     Avg QP:15.40  size: 26544
+[libx264 @ 0x89b078a80] frame P:31    Avg QP:20.53  size: 26302
+[libx264 @ 0x89b078a80] frame B:87    Avg QP:25.60  size:  3638
+[libx264 @ 0x89b078a80] consecutive B-frames:  2.5%  1.7%  2.5% 93.3%
+[libx264 @ 0x89b078a80] mb I  I16..4: 54.5% 38.7%  6.8%
+[libx264 @ 0x89b078a80] mb P  I16..4:  1.6%  3.2%  0.4%  P16..4: 37.4% 11.4%  8.6%  0.0%  0.0%    skip:37.3%
+[libx264 @ 0x89b078a80] mb B  I16..4:  0.4%  0.4%  0.0%  B16..8: 31.6%  0.7%  0.1%  direct: 1.8%  skip:65.0%  L0:44.3% L1:51.6% BI: 4.1%
+[libx264 @ 0x89b078a80] 8x8 transform intra:49.2% inter:73.5%
+[libx264 @ 0x89b078a80] coded y,uvDC,uvAC intra: 18.5% 29.0% 10.5% inter: 5.1% 9.1% 2.2%
+[libx264 @ 0x89b078a80] i16 v,h,dc,p: 74% 12%  6%  8%
+[libx264 @ 0x89b078a80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 10% 46%  5%  3%  2%  3%  4%  3%
+[libx264 @ 0x89b078a80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 22% 17% 29%  5%  9%  5%  6%  5%  3%
+[libx264 @ 0x89b078a80] i8c dc,h,v,p: 76% 13% 10%  1%
+[libx264 @ 0x89b078a80] Weighted P-Frames: Y:25.8% UV:25.8%
+[libx264 @ 0x89b078a80] ref P L0: 71.2%  9.4% 12.0%  7.5%  0.0%
+[libx264 @ 0x89b078a80] ref B L0: 92.6%  6.2%  1.2%
+[libx264 @ 0x89b078a80] ref B L1: 96.4%  3.6%
+[libx264 @ 0x89b078a80] kb/s:2369.99
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[concat @ 0xc2ac40000] Impossible to open 'local-free-character-video-m1/results/local-free-character-video-m1/results/anime_clips/scene_01.mp4'
+[in#0 @ 0xc2ac3c000] Error opening input: No such file or directory
+Error opening input file local-free-character-video-m1/results/concat_list.txt.
+Error opening input files: No such file or directory
+Traceback (most recent call last):
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/scripts/render_anime_video.py", line 67, in <module>
+    main()
+    ~~~~^^
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/scripts/render_anime_video.py", line 62, in main
+    concat(clips, Path(args.out))
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/scripts/render_anime_video.py", line 42, in concat
+    run(['ffmpeg','-y','-f','concat','-safe','0','-i',str(lst),'-c:v','libx264','-pix_fmt','yuv420p',str(out)])
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/scripts/render_anime_video.py", line 16, in run
+    subprocess.run(cmd, check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['ffmpeg', '-y', '-f', 'concat', '-safe', '0', '-i', 'local-free-character-video-m1/results/concat_list.txt', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', 'local-free-character-video-m1/results/final_anime_rerun.mp4']' returned non-zero exit status 254.
+        9.84 real        65.28 user         1.42 sys
+           809091072  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              254495  page reclaims
+                1510  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 238  voluntary context switches
+               96206  involuntary context switches
+           325773431  instructions retired
+           139401626  cycles elapsed
+            11109376  peak memory footprint

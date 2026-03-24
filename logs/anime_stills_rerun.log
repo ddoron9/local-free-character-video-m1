@@ -1,0 +1,50 @@
+[start] 2026-03-24 13:53:29 KST anime_stills_rerun
+/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/vendor/ComfyUI/.venv/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:03,  1.70it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 6041.05it/s]
+Loading pipeline components...:  71%|███████▏  | 5/7 [00:00<00:00,  8.15it/s]
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 517/517 [00:00<00:00, 6653.01it/s]
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00,  9.14it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00,  7.55it/s]
+Token indices sequence length is longer than the specified maximum sequence length for this model (124 > 77). Running this sequence through the model will result in indexing errors
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['illustration, vertical composition, no gore, no blood, no body exposure, no chest emphasis, gender - neutral mascot design, rabbit - based character design, anime movie still, polished shading, expressive lighting, clean line art, consistent bunny mascot character']
+Token indices sequence length is longer than the specified maximum sequence length for this model (124 > 77). Running this sequence through the model will result in indexing errors
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['illustration, vertical composition, no gore, no blood, no body exposure, no chest emphasis, gender - neutral mascot design, rabbit - based character design, anime movie still, polished shading, expressive lighting, clean line art, consistent bunny mascot character']
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:01<00:04,  1.36s/it] 50%|█████     | 2/4 [00:02<00:02,  1.23s/it] 75%|███████▌  | 3/4 [00:03<00:01,  1.20s/it]100%|██████████| 4/4 [00:04<00:00,  1.17s/it]100%|██████████| 4/4 [00:04<00:00,  1.20s/it]
+/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/vendor/ComfyUI/.venv/lib/python3.13/site-packages/diffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl.py:748: FutureWarning: `upcast_vae` is deprecated and will be removed in version 1.0.0. `upcast_vae` is deprecated. Please use `pipe.vae.to(torch.float32)`. For more details, please refer to: https://github.com/huggingface/diffusers/pull/12619#issue-3606633695.
+  deprecate(
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['exposure, no chest emphasis, gender - neutral mascot design, rabbit - based character design, anime movie still, polished shading, expressive lighting, clean line art, consistent bunny mascot character']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['exposure, no chest emphasis, gender - neutral mascot design, rabbit - based character design, anime movie still, polished shading, expressive lighting, clean line art, consistent bunny mascot character']
+[ok] wrote local-free-character-video-m1/results/anime_stills_rerun/scene_01.png
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:01<00:03,  1.07s/it] 50%|█████     | 2/4 [00:02<00:02,  1.16s/it] 75%|███████▌  | 3/4 [00:03<00:01,  1.16s/it]100%|██████████| 4/4 [00:04<00:00,  1.17s/it]100%|██████████| 4/4 [00:04<00:00,  1.16s/it]
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', no chest emphasis, gender - neutral mascot design, rabbit - based character design, anime movie still, polished shading, expressive lighting, clean line art, consistent bunny mascot character']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', no chest emphasis, gender - neutral mascot design, rabbit - based character design, anime movie still, polished shading, expressive lighting, clean line art, consistent bunny mascot character']
+[ok] wrote local-free-character-video-m1/results/anime_stills_rerun/scene_02.png
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:01<00:03,  1.13s/it] 50%|█████     | 2/4 [00:02<00:02,  1.13s/it] 75%|███████▌  | 3/4 [00:03<00:01,  1.14s/it]100%|██████████| 4/4 [00:04<00:00,  1.15s/it]100%|██████████| 4/4 [00:04<00:00,  1.15s/it]
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', gender - neutral mascot design, rabbit - based character design, anime movie still, polished shading, expressive lighting, clean line art, consistent bunny mascot character']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', gender - neutral mascot design, rabbit - based character design, anime movie still, polished shading, expressive lighting, clean line art, consistent bunny mascot character']
+[ok] wrote local-free-character-video-m1/results/anime_stills_rerun/scene_03.png
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:01<00:03,  1.09s/it] 50%|█████     | 2/4 [00:02<00:02,  1.13s/it] 75%|███████▌  | 3/4 [00:03<00:01,  1.16s/it]100%|██████████| 4/4 [00:04<00:00,  1.13s/it]100%|██████████| 4/4 [00:04<00:00,  1.13s/it]
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', polished shading, expressive lighting, clean line art, consistent bunny mascot character']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', polished shading, expressive lighting, clean line art, consistent bunny mascot character']
+[ok] wrote local-free-character-video-m1/results/anime_stills_rerun/scene_04.png
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:01<00:03,  1.06s/it] 50%|█████     | 2/4 [00:02<00:02,  1.14s/it] 75%|███████▌  | 3/4 [00:03<00:01,  1.15s/it]100%|██████████| 4/4 [00:04<00:00,  1.14s/it]100%|██████████| 4/4 [00:04<00:00,  1.14s/it]
+[ok] wrote local-free-character-video-m1/results/anime_stills_rerun/scene_05.png
+       49.43 real        11.01 user         7.79 sys
+           754630656  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             -319255  page reclaims
+              428720  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  18  messages sent
+                  46  messages received
+                   0  signals received
+                7838  voluntary context switches
+               69935  involuntary context switches
+         76910183172  instructions retired
+         38588864747  cycles elapsed
+         14614728576  peak memory footprint

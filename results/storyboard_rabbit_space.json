@@ -1,0 +1,45 @@
+{
+  "topic": "토끼 우주 캐릭터가 우주 사고를 겪으면 어떻게 될까",
+  "scenes": [
+    {
+      "index": 1,
+      "seconds": 5,
+      "seed": 21001,
+      "caption": "로켓이 깨지면?",
+      "narration": "로켓이 우주로 가다가 파손되면, 토끼 캐릭터는 순식간에 진공 환경에 던져집니다.",
+      "prompt": "anime cinematic scene, stylish white rabbit astronaut character in a clean white and orange spacesuit, rocket breaking apart during ascent above Earth, rabbit astronaut being thrown out into open space, long ears visible through or around helmet design, surprised and alarmed expression, dramatic debris, blue Earth in background, dynamic but readable composition, polished anime shading, crisp line art, sci-fi illustration, vertical composition, no gore, no blood, no body exposure, no chest emphasis, gender-neutral mascot design"
+    },
+    {
+      "index": 2,
+      "seconds": 5,
+      "seed": 21002,
+      "caption": "숨이 막히기 시작한다",
+      "narration": "가장 먼저 위험한 건 추위보다 산소 부족입니다. 숨을 쉬지 못하면 빠르게 당황하게 됩니다.",
+      "prompt": "anime close-up of the same white rabbit astronaut character in a damaged but modest spacesuit floating in space after a rocket accident, helmet cracked or lost, frightened expression, wide eyes, tense mouth, ears drifting in zero gravity, cinematic anime frame, educational dramatic style, Earth and stars behind, clean silhouette, high detail, vertical, no gore, no blood, no body exposure, no chest emphasis, gender-neutral mascot design"
+    },
+    {
+      "index": 3,
+      "seconds": 5,
+      "caption": "진공은 몸에 큰 부담을 준다",
+      "narration": "몸이 바로 폭발하진 않지만, 압력 차 때문에 몸은 큰 부담을 받게 됩니다.",
+      "seed": 21003,
+      "prompt": "anime scientific storytelling shot of the same rabbit astronaut character in space, suit parts fluttering, visual effects showing dangerous vacuum pressure as light distortions and drifting particles around the body, face showing strain and discomfort but not grotesque, educational sci-fi anime style, polished shading, clean composition, readable silhouette, vertical composition, no gore, no blood, no body horror, no chest emphasis, gender-neutral mascot design"
+    },
+    {
+      "index": 4,
+      "seconds": 5,
+      "caption": "의식이 흐려진다",
+      "narration": "산소가 공급되지 않으면 곧 의식이 흐려지고, 몸에 힘이 빠지기 시작합니다.",
+      "seed": 21004,
+      "prompt": "anime emotional scene of the same rabbit astronaut character slowly losing strength in outer space, body becoming limp, ears drooping in zero gravity, eyes unfocused, damaged spacesuit still covering the body modestly, calm tragic cinematic mood, Earth glowing softly in background, polished anime illustration, vertical composition, no gore, no blood, no body exposure, no chest emphasis, gender-neutral mascot design"
+    },
+    {
+      "index": 5,
+      "seconds": 4,
+      "caption": "우주는 맨몸으로 버틸 수 없다",
+      "narration": "결론적으로, 우주에서는 진공과 산소 부족이 아주 빠르게 생명을 위협합니다.",
+      "seed": 21005,
+      "prompt": "anime final warning shot, the same rabbit astronaut character as a small silhouette drifting above Earth, broken rocket debris far away, solemn educational tone, clean composition, minimal but cinematic, polished sci-fi anime art, vertical composition, no gore, no blood, no body exposure, no chest emphasis, gender-neutral mascot design"
+    }
+  ]
+}

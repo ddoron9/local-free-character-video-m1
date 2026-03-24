@@ -1,0 +1,56 @@
+[start] 2026-03-24 13:48:39 KST wan_quick_test
+[1] loading image /Users/gimdoi/.openclaw/workspace/ai_video_pipeline/output/svd_start.png
+[2] loading text encoder
+[3] loading clip vision
+[4] loading vae
+[5] loading wan gguf unet
+[6] encoding prompts
+[7] encoding clip vision
+[8] creating wan i2v latent
+[9] sampling with 2 steps
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [01:33<01:33, 93.08s/it]100%|██████████| 2/2 [02:48<00:00, 82.63s/it]100%|██████████| 2/2 [02:48<00:00, 84.20s/it]
+[10] decoding
+[done] /Users/gimdoi/.openclaw/workspace/ai_video_pipeline/output/wan_quick_test.mp4 (5, 480, 832, 3)
+Exception ignored in: <function ModelPatcher.__del__ at 0x127eb1f80>
+Traceback (most recent call last):
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/vendor/ComfyUI/comfy/model_patcher.py", line 1467, in __del__
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/vendor/ComfyUI/comfy/model_patcher.py", line 1081, in detach
+AttributeError: 'NoneType' object has no attribute 'ON_DETACH'
+Exception ignored in: <function ModelPatcher.__del__ at 0x127eb1f80>
+Traceback (most recent call last):
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/vendor/ComfyUI/comfy/model_patcher.py", line 1467, in __del__
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/vendor/ComfyUI/comfy/model_patcher.py", line 1081, in detach
+AttributeError: 'NoneType' object has no attribute 'ON_DETACH'
+Exception ignored in: <function ModelPatcher.__del__ at 0x127eb1f80>
+Traceback (most recent call last):
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/vendor/ComfyUI/comfy/model_patcher.py", line 1467, in __del__
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/vendor/ComfyUI/comfy/model_patcher.py", line 1081, in detach
+AttributeError: 'NoneType' object has no attribute 'ON_DETACH'
+Exception ignored in: <function ModelPatcher.__del__ at 0x127eb1f80>
+Traceback (most recent call last):
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/vendor/ComfyUI/comfy/model_patcher.py", line 1467, in __del__
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/vendor/ComfyUI/comfy/model_patcher.py", line 1081, in detach
+AttributeError: 'NoneType' object has no attribute 'ON_DETACH'
+Exception ignored in: <function ModelPatcher.__del__ at 0x127eb1f80>
+Traceback (most recent call last):
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/vendor/ComfyUI/comfy/model_patcher.py", line 1467, in __del__
+  File "/Users/gimdoi/.openclaw/workspace/ai_video_pipeline/vendor/ComfyUI/comfy/model_patcher.py", line 1081, in detach
+AttributeError: 'NoneType' object has no attribute 'ON_DETACH'
+      277.58 real        44.70 user        92.10 sys
+         12589989888  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              730302  page reclaims
+              524700  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               92298  voluntary context switches
+             1039650  involuntary context switches
+        430800622417  instructions retired
+        323402053692  cycles elapsed
+         57163683776  peak memory footprint
