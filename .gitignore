@@ -4,3 +4,8 @@ __pycache__/
 .env
 .venv
 vendor/
+results/reference/
+results/control/
+results/reviews/*.csv
+results/reviews/*.md
+results/ipadapter_*/

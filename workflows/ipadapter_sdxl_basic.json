@@ -1,0 +1,107 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "results/reference/rabbit_front.png"
+    },
+    "_meta": { "title": "REFERENCE_IMAGE" }
+  },
+  "2": {
+    "class_type": "CLIPTextEncodeSDXL",
+    "inputs": {
+      "text": "front portrait of the rabbit mascot",
+      "clip": ["10", 1],
+      "width": 1024,
+      "height": 1024,
+      "crop_w": 0,
+      "crop_h": 0,
+      "target_width": 1024,
+      "target_height": 1024
+    },
+    "_meta": { "title": "POSITIVE_PROMPT" }
+  },
+  "3": {
+    "class_type": "CLIPTextEncodeSDXL",
+    "inputs": {
+      "text": "blurry, low quality, duplicate character, distorted ears, wrong costume colors",
+      "clip": ["10", 1],
+      "width": 1024,
+      "height": 1024,
+      "crop_w": 0,
+      "crop_h": 0,
+      "target_width": 1024,
+      "target_height": 1024
+    },
+    "_meta": { "title": "NEGATIVE_PROMPT" }
+  },
+  "4": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 42,
+      "steps": 28,
+      "cfg": 6.5,
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "denoise": 1.0,
+      "model": ["11", 0],
+      "positive": ["2", 0],
+      "negative": ["3", 0],
+      "latent_image": ["8", 0]
+    }
+  },
+  "5": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": ["4", 0],
+      "vae": ["10", 2]
+    }
+  },
+  "6": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "results/ipadapter_sdxl_basic/scene_01_seed42",
+      "images": ["5", 0]
+    }
+  },
+  "8": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 576,
+      "height": 1024,
+      "batch_size": 1
+    }
+  },
+  "10": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "<set_sdxl_checkpoint_here>"
+    }
+  },
+  "11": {
+    "class_type": "IPAdapterAdvanced",
+    "inputs": {
+      "weight": 0.85,
+      "weight_type": "linear",
+      "combine_embeds": "concat",
+      "start_at": 0.0,
+      "end_at": 1.0,
+      "embeds_scaling": "V only",
+      "model": ["10", 0],
+      "ipadapter": ["12", 0],
+      "image": ["1", 0],
+      "clip_vision": ["13", 0]
+    }
+  },
+  "12": {
+    "class_type": "IPAdapterModelLoader",
+    "inputs": {
+      "ipadapter_file": "<set_sdxl_ipadapter_plus_model_here>"
+    }
+  },
+  "13": {
+    "class_type": "CLIPVisionLoader",
+    "inputs": {
+      "clip_name": "<set_clip_vision_model_here>"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "benchmark": "character_consistency_v1",
+  "character": {
+    "name": "rabbit_mascot_v1",
+    "reference_image": "results/reference/rabbit_front.png",
+    "notes": "Single front-facing reference image. Goal is to preserve head shape, ears, face markings, costume colors, and overall mascot silhouette. Prefer front and 3/4 views over extreme profile/back views."
+  },
+  "global_negative_prompt": "blurry, low quality, bad anatomy, malformed face, extra limbs, extra fingers, duplicate character, multiple characters, text, watermark, logo, ugly, noisy, distorted ears, wrong costume colors",
+  "seeds": [42, 123, 777],
+  "scenes": [
+    {
+      "index": 1,
+      "id": "front_portrait",
+      "framing": "portrait_front",
+      "seconds": 4,
+      "prompt": "Front-facing portrait of the rabbit mascot character, centered composition, soft studio lighting, clean background, high character readability",
+      "controlnet": null,
+      "priority": "must-pass"
+    },
+    {
+      "index": 2,
+      "id": "three_quarter_portrait",
+      "framing": "portrait_three_quarter",
+      "seconds": 4,
+      "prompt": "Three-quarter portrait of the same rabbit mascot character, slight head turn, soft cinematic lighting, clean composition, same costume and face identity",
+      "controlnet": "softedge",
+      "priority": "must-pass"
+    },
+    {
+      "index": 3,
+      "id": "waistup_indoor",
+      "framing": "waist_up",
+      "seconds": 4,
+      "prompt": "Waist-up shot of the same rabbit mascot character inside a cozy creative studio, expressive pose, same face markings, same costume colors",
+      "controlnet": "depth",
+      "priority": "must-pass"
+    },
+    {
+      "index": 4,
+      "id": "fullbody_standing",
+      "framing": "full_body",
+      "seconds": 4,
+      "prompt": "Full-body standing shot of the same rabbit mascot character, simple stage-like background, clean silhouette, same proportions and costume palette",
+      "controlnet": "openpose",
+      "priority": "must-pass"
+    },
+    {
+      "index": 5,
+      "id": "walking_outdoor",
+      "framing": "full_body_action",
+      "seconds": 4,
+      "prompt": "The same rabbit mascot character walking outdoors on a city street at golden hour, readable face, same costume identity, controlled motion pose",
+      "controlnet": "openpose",
+      "priority": "high"
+    },
+    {
+      "index": 6,
+      "id": "sitting_desk",
+      "framing": "waist_up",
+      "seconds": 4,
+      "prompt": "The same rabbit mascot character sitting at a desk with a laptop, indoor ambient lighting, same face identity, same costume details",
+      "controlnet": "depth",
+      "priority": "high"
+    },
+    {
+      "index": 7,
+      "id": "dramatic_closeup",
+      "framing": "closeup",
+      "seconds": 4,
+      "prompt": "Dramatic close-up of the same rabbit mascot character, strong rim light, emotional expression, identical face markings and ear silhouette",
+      "controlnet": "softedge",
+      "priority": "high"
+    },
+    {
+      "index": 8,
+      "id": "action_background_shift",
+      "framing": "medium_action",
+      "seconds": 4,
+      "prompt": "The same rabbit mascot character in an energetic action pose with a dynamic sci-fi background, consistent face identity and costume colors",
+      "controlnet": "openpose",
+      "priority": "stretch"
+    }
+  ]
+}

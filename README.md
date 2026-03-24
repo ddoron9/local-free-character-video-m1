@@ -91,9 +91,50 @@ Apple Silicon(M1 Pro 32GB)에서 **무료/로컬 우선**으로 캐릭터 기반
 - `generate_anime_stills.py` 프롬프트 일부가 CLIP 77 token 제한으로 잘립니다.
 - video consistency 자체는 아직 weak baseline 수준입니다.
 
+## Character consistency follow-up plan
+
+현재 방향은 **video-first가 아니라 still-first** 입니다.
+즉, **정면 캐릭터 1장 -> reference-guided still consistency 확보 -> 베스트 샷만 i2v** 순서로 진행합니다.
+
+### Added in this repo
+- benchmark spec: `results/storyboard_character_consistency_v1.json`
+- generator scaffold: `scripts/generate_character_stills_ipadapter.py`
+- review/eval scaffold: `scripts/eval_character_consistency.py`
+- workflow templates:
+  - `workflows/ipadapter_sd15_fast.json`
+  - `workflows/ipadapter_sdxl_basic.json`
+  - `workflows/ipadapter_sdxl_pose.json`
+- research note: `docs/character_consistency_research_2026-03-24.md`
+
+### Recommended execution order
+1. `ipadapter_sd15_fast` 로 빠른 파라미터 스윕
+2. `ipadapter_sdxl_basic` 로 품질 상한 확인
+3. `ipadapter_sdxl_pose` 로 포즈/구도 제어 추가
+4. scene/seed별 수동 평가 + markdown summary 생성
+5. 가장 잘 나온 still만 i2v 후단으로 전달
+
+### Quick commands
+```bash
+# 1) dry-run workflow payload generation
+python3 scripts/generate_character_stills_ipadapter.py \
+  --reference results/reference/rabbit_front.png \
+  --spec results/storyboard_character_consistency_v1.json \
+  --workflow workflows/ipadapter_sdxl_basic.json \
+  --outdir results/ipadapter_sdxl_basic \
+  --dry-run
+
+# 2) review sheet 만들기
+python3 scripts/eval_character_consistency.py \
+  --spec results/storyboard_character_consistency_v1.json \
+  --method ipadapter_sdxl_basic \
+  --review-csv results/reviews/ipadapter_sdxl_basic_review.csv \
+  --summary-md results/reviews/ipadapter_sdxl_basic_summary.md
+```
+
 ## Next steps
 
-- character reference 기반 img2img / IP-Adapter 비교
-- scene consistency 정량 평가표 추가
-- Wan/SVD/AnimateDiff 계열 비교
-- M1 Pro 기준 품질-시간 tradeoff 표 정리
+- reference image `results/reference/rabbit_front.png` 추가
+- ComfyUI에 실제 IP-Adapter / CLIP Vision / ControlNet 모델 파일 연결
+- first ablation run: SD1.5 vs SDXL vs SDXL+pose
+- scene consistency 정량/정성 평가 입력
+- Wan/SVD/AnimateDiff 계열 비교는 still baseline 안정화 후 진행
