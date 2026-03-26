@@ -29,6 +29,19 @@ Apple Silicon(M1 Pro 32GB)에서 **무료/로컬 우선**으로 캐릭터 기반
 
 ![Rabbit similarity grid](assets/rabbit_similarity_grid.gif)
 
+## Visual artifacts for current benchmark
+
+현재 검증된 산출물은 문서 안에서도 바로 확인할 수 있게 GIF로 같이 붙입니다.
+
+### Still-first Shorts output (best current Shorts-like result)
+![Final anime rerun gif](assets/bench_20260325/final_anime_rerun_fixed.gif)
+
+### Alternate still-first render
+![Final anime rabbit gif](assets/bench_20260325/final_anime_rabbit.gif)
+
+### Wan quick i2v proof-of-run
+![Wan quick test gif](assets/bench_20260325/baseline_wan_quick_test.gif)
+
 ## Verified results
 
 ### A. Wan quick i2v rerun
@@ -131,6 +144,28 @@ python3 scripts/eval_character_consistency.py \
   --summary-md results/reviews/ipadapter_sdxl_basic_summary.md
 ```
 
+## Current benchmark status (2026-03-25)
+
+### What is best right now?
+
+#### Best for actual Shorts / YouTuber-like output
+- **SDXL Turbo still-first + vertical editing/render**
+- Why: even without perfect identity lock, this path currently produces the most watchable 9:16 deliverable on this Mac.
+
+#### Best for preserving the initial input image
+- **Wan 2.1 GGUF image-to-video quick test**
+- Why: starter-image continuity is stronger than the prompt-only still baseline.
+- Limitation: current verified local output is only ~0.625s / 5 frames / 480x832, so it is not yet a good primary production path.
+
+#### Biggest current weakness
+- **Prompt-only still generation does not hold the same character reliably across scenes.**
+- The most likely fix is the missing branch already scaffolded in this repo: **SDXL + IP-Adapter (+ optional ControlNet)**.
+
+### Living benchmark docs
+- Status notes: `docs/notes.md`
+- Research note: `docs/character_consistency_research_2026-03-24.md`
+- Benchmark review: `results/reviews/2026-03-25_m1_shorts_benchmark.md`
+
 ## Next steps
 
 - reference image `results/reference/rabbit_front.png` 추가
@@ -138,3 +173,4 @@ python3 scripts/eval_character_consistency.py \
 - first ablation run: SD1.5 vs SDXL vs SDXL+pose
 - scene consistency 정량/정성 평가 입력
 - Wan/SVD/AnimateDiff 계열 비교는 still baseline 안정화 후 진행
+- every new run should update docs together with artifacts, not afterward-only
