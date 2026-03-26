@@ -1,0 +1,30 @@
+[1] loading image /Users/gimdoi/.openclaw/workspace/local-free-character-video-m1/results/reference/rabbit_front.png
+[2] loading text encoder
+[3] loading clip vision
+[4] loading vae
+[5] loading wan gguf unet
+[6] encoding prompts
+[7] encoding clip vision
+[8] creating wan i2v latent
+[9] sampling with 2 steps
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [01:29<01:29, 89.68s/it]100%|██████████| 2/2 [04:37<00:00, 147.63s/it]100%|██████████| 2/2 [04:37<00:00, 138.95s/it]
+[10] decoding
+[done] /Users/gimdoi/.openclaw/workspace/local-free-character-video-m1/results/shorts_2026-03-26/wan_rabbit_03.mp4 (5, 480, 832, 3)
+      388.87 real        44.56 user       174.55 sys
+         15405858816  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              655272  page reclaims
+              521881  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              312875  voluntary context switches
+              534472  involuntary context switches
+        570504612735  instructions retired
+        522402268285  cycles elapsed
+         57259726976  peak memory footprint

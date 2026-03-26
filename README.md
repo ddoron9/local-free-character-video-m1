@@ -166,6 +166,14 @@ python3 scripts/eval_character_consistency.py \
 - Research note: `docs/character_consistency_research_2026-03-24.md`
 - Benchmark review: `results/reviews/2026-03-25_m1_shorts_benchmark.md`
 
+## Rabbit shorts from Wan (2026-03-26)
+
+Short clips generated locally using NVIDIA Wan 2.1 I2V with rabbit reference.
+
+- [wan_rabbit_01.mp4](./results/shorts_2026-03-26/wan_rabbit_01.mp4)
+- [wan_rabbit_02.mp4](./results/shorts_2026-03-26/wan_rabbit_02.mp4)
+- [wan_rabbit_03.mp4](./results/shorts_2026-03-26/wan_rabbit_03.mp4)
+
 ## Next steps
 
 - reference image `results/reference/rabbit_front.png` 추가

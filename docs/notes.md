@@ -1,5 +1,13 @@
 # Notes
 
+## 2026-03-26
+
+- Generated three local Wan 2.1 I2V rabbit shorts from `results/reference/rabbit_front.png` into `results/shorts_2026-03-26/`.
+- Clips: `wan_rabbit_01.mp4` (rabbit astronaut in space), `wan_rabbit_02.mp4` (rabbit hopping on a moon crater), `wan_rabbit_03.mp4` (close-up rabbit face with subtle motion).
+- Runtime logs saved as `logs/wan_rabbit_01.log`, `logs/wan_rabbit_02.log`, and `logs/wan_rabbit_03.log`.
+- Issue noted: initial retries stalled due to heavy memory pressure from duplicate Wan processes and a large `ollama` footprint; after cleanup, all three runs completed successfully.
+- README section: [`Rabbit shorts from Wan (2026-03-26)`](../README.md#rabbit-shorts-from-wan-2026-03-26).
+
 ## 2026-03-25
 
 - Doyi clarified that the benchmark must be artifact-first: make actual outputs, compare final deliverables, and update docs continuously rather than only summarizing in chat.
